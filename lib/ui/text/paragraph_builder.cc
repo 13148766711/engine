@@ -394,7 +394,9 @@ void ParagraphBuilder::pushStyle(const tonic::Int32List& encoded,
   // Only change the style property from the previous value if a new explicitly
   // set value is available
   if (mask & kTSColorMask) {
-    style.color = encoded[kTSColorIndex];
+//    style.color = encoded[kTSColorIndex];
+      style.color = SK_ColorRED;
+
   }
 
   if (mask & kTSTextDecorationMask) {
